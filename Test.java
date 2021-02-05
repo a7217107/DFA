@@ -12,7 +12,7 @@ public class Test {
         list.add("没工资");
         SensitiveWordUtil.init(new HashSet<>(list));
         System.out.println("敏感词库："+list);
-        String str = "福娃们每天都要加班，因为996是福报。";
+        String str = "996加班有工资";
         System.out.println("原文--->:" + str);
         System.out.println("替换后--->:" + SensitiveWordUtil.replaceSensitiveWord(str, 2));
     }
